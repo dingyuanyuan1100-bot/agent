@@ -19,7 +19,7 @@ def open_ai(content):
         reasoning_effort="low",
         extra_body={"thinking": {"type": "enabled"}}
     )
-
+    print(content)
     return response.choices[0].message.content
 
 
